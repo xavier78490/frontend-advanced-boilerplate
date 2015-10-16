@@ -1,0 +1,21 @@
+<div class = "padded-bottom text-center">
+  <h2 class = "section-header"> Contact us</h2>
+  <h3> <i class = "fa fa-phone"></i>
+    +33 6 45 230 000
+  </h3>
+  <h3>
+    <i class= "fa fa-envelope"></i>
+    <%= link_to "contact@mail.us", "mailito:contact@styl" %>
+  </h3>
+  <div class="container">
+    <div class="row">
+      <% data.mates.each do |mate| %>
+        <div class="col-xs-4 text-center", style= "padding-top: 10em, padding-bottom: 10em">
+          <%= image_tag mate.picture, class: "img-circle", style: "height: 150px; width: auto" %>
+          <h2><%= mate.name %></h2>
+          <p><%= mate.summary %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

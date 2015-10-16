@@ -1,10 +1,185 @@
----
-title: Le Wagon Middleman boilerplate
----
+<!DOCTYPE html>
+<html>
+  <head>
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="banner text-center" style="background-image: url('https://images.unsplash.com/photo-1442188950719-e8a67aea613a?q=80&fm=jpg&s=b91323d5c3f24a32a15a05ce7b122631')">
+      <div class="banner-shadow"></div>
+      <div class="banner-content fade-and-slide">
+        <h1>Cars tools</h1>
+        <p>Very cool Cars, useful, smart and brilliant</p>
+        <%= link_to "BUY IT", "www.google.com", class: "btn btn-primary btn-lg" %>
+        <!-- <a href="#" class="btn btn-primary btn-lg">BUY IT</a> -->
+      </div>
+    </div>
+
+    <div class="padded">
+      <div class="container">
+        <div class="col-xs-12 col-sm-3">
+          <div class="feature">
+            <h2>
+              <%= image_tag "chat.png" %>
+<!--               <img src="images/chat.png" alt=""> -->
+              Discuss with our concierge
+            </h2>
+            <p>
+              The Concierge is dedicated to making your experience extraordinary with an exclusive and unsurpassed level of customized service and personalized attention.
+            </p>
+            <p>
+              Our Concierge staff can assist with anything from cars and shows reservations to travel arrangements, sightseeing or placing you first in line for any other entertainment options that we have to offer.
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="feature">
+            <h2>
+              <%= image_tag "mobile.png" %>
+<!--               <img src="images/mobile.png" alt=""> -->
+              Control your car on your Smartphone
+            </h2>
+            <p>
+              myAudi has an array of useful tools to help you get the most from your Audi.
+            </p>
+            <p>
+              Browse video tutorials, service and warranty resources, a payment estimator, see special offers and even locate a dealer. When you select your model below, videos and more are all personalized for you and your Audi. Enjoy.
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="feature">
+            <h2>
+              <%= image_tag "search.png" %>
+<!--               <img src="images/search.png" alt=""> -->
+              Connect: Changing what's remotely possible
+            </h2>
+            <p>
+              The future of driving is a connected adventure, where access to your vehicle doesn't stop when you walk away.
+            </p>
+            <p>
+              Mercedes me brings the power of the Internet inside your vehicle and allows you to control it from your computer or phone.
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="feature">
+            <h2>
+              <%= image_tag "heart.png" %>
+              <!-- <img src="images/heart.png" alt=""> -->
+              Discover how the race is won...
+            </h2>
+            <p>
+              In 1967, two automotive engineers with a passion for motorsports began fine-tuning engines for Mercedes-Benz racecars in an old mill. Today, AMG creates some of the most sought-after vehicles in the world.
+            </p>
+            <p>
+              They're the product of skilled craftsmen, designers and engineers who live to test the limits, and one shared conviction: on the road to driving performance, short cuts never win the race.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="padded">
+      <h2 class="section-header text-center">Most popular</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <span class="card-bg" style="background-image: url('http://bit.ly/1X6n2lq')"></span>
+              <span class="card-shadow"></span>
+              <span class="card-description">Popular</span>
+              <span class="card-text">
+                <h2>Audi TT</h2>
+                <p>Very cool sportscar, useful and smart</p>
+              </span>
+              <span class="card-user">
+                <%= image_tag 'http://placehold.it/50x50', class: "avatar avatar-bordered" %>
+                <!-- <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/> -->
+              </span>
+              <%= link_to "", "www.google.com", class: "card-link" %>
+              <!-- <a href="#" class="card-link"></a> -->
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <span class="card-bg" style="background-image: url('http://bit.ly/1MrXJCO')"></span>
+              <span class="card-shadow"></span>
+              <span class="card-description">Popular</span>
+              <span class="card-text">
+                <h2>Mercedes GLE</h2>
+                <p>Very cool SUV, useful and powerfull</p>
+              </span>
+              <span class="card-user">
+                <%= image_tag 'http://placehold.it/50x50', class: "avatar avatar-bordered" %>
+                <!-- <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/> -->
+              </span>
+              <%= link_to "", "www.google.com", class: "card-link" %>
+              <!-- <a href="#" class="card-link"></a> -->
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <span class="card-bg" style="background-image: url('http://bit.ly/1RK1W9A')"></span>
+              <span class="card-shadow"></span>
+              <span class="card-description">Popular</span>
+              <span class="card-text">
+                <h2>Mercedes Classe S</h2>
+                <p>Very class car, useful and brilliant</p>
+              </span>
+              <span class="card-user">
+                <%= image_tag 'http://placehold.it/50x50', class: "avatar avatar-bordered" %>
+                <!-- <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/> -->
+              </span>
+              <%= link_to "", "www.google.com", class: "card-link" %>
+              <!-- <a href="#" class="card-link"></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center padded" id="newsletter">
+      <h2 class="section-header">Get news from us</h2>
+      <p>Leave us your mail and get stylus news</p>
+      <form class="form-inline">
+        <input type="email" placeholder="mercedes@icloud.com" class="form-control">
+        <input type="submit" value="Start" class="btn btn-primary btn-bordered btn-bordered-primary">
+      </form>
+    </div>
+
+    <div id="map" style="width: 100%;height: 300px;"></div>
+
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.8648517,2.3776647);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"all","elementType":"geometry","stylers":[{"saturation":"-100"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]}]
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title:"You are here!"
+    });
+    </script>
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  </body>
+</html>

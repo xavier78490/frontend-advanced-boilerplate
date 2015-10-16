@@ -1,0 +1,19 @@
+@import url("banner.scss");
+@import url("card.scss");
+@import url("avatar.scss");
+@import url("feature.scss");
+@import url("footer.scss");
+
+body {
+  margin: 0;
+  font-family: Open-sans, sans-serif;
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+.padded {
+  padding: 5em 0;
+}
